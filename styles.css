@@ -45,7 +45,7 @@ body
 }
 .visible
 {
-    visibility:none;
+    visibility:hidden;
 }
 .header nav a:hover
 {
@@ -510,5 +510,25 @@ body
 .last h2
 {
     margin-top:50px;
+
+}
+@media(max-width:600px)
+{
+    .header
+    {
+        height:200px;
+        width: 100%;
+        border-bottom:1px solid #fff;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom:40px;
+        
+    
+    }
+    .header nav a
+    {
+        visibility: hidden;
+    }
 
 }
